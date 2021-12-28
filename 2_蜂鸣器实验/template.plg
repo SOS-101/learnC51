@@ -1,0 +1,23 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\taochangwan\Documents\Code\C51\2_蜂鸣器实验\template.uvproj
+Project File Date:  10/04/2021
+
+<h2>Output:</h2>
+Build target 'project'
+compiling main.c...
+main.c(16): error C202: 'true': undefined identifier
+目标未创建
+Build target 'project'
+compiling main.c...
+main.c(19): error C141: syntax error near '~'
+main.c(19): error C141: syntax error near '='
+目标未创建
+Build target 'project'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=39
+"template" - 0 Error(s), 0 Warning(s).

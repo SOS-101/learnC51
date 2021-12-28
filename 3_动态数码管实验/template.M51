@@ -1,0 +1,146 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/06/2021  14:53:41  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE main.obj TO template
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  template (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     006DH     UNIT         ?PR?DIGDISPLAY?MAIN
+            CODE    0070H     0011H     UNIT         ?CO?MAIN
+            CODE    0081H     000CH     UNIT         ?C_C51STARTUP
+            CODE    008DH     000BH     UNIT         ?PR?_DELAY?MAIN
+            CODE    0098H     0005H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   template (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?DIGDISPLAY?MAIN
+
+?PR?DIGDISPLAY?MAIN
+  +--> ?CO?MAIN
+  +--> ?PR?_DELAY?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  template (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/06/2021  14:53:41  PAGE 2
+
+
+  D:00A0H         PUBLIC        P2
+  C:008DH         PUBLIC        _delay
+  C:0098H         PUBLIC        main
+  B:00A0H.2       PUBLIC        LSA
+  B:00A0H.3       PUBLIC        LSB
+  B:00A0H.4       PUBLIC        LSC
+  C:0003H         PUBLIC        DigDisplay
+  C:0070H         PUBLIC        smgduan
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        i
+  C:008DH         LINE#         15
+  C:008DH         LINE#         16
+  C:0097H         LINE#         17
+  C:0097H         LINE#         18
+  -------         ENDPROC       _DELAY
+  -------         PROC          DIGDISPLAY
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         20
+  C:0003H         LINE#         22
+  C:0005H         LINE#         23
+  C:002AH         LINE#         24
+  C:002AH         LINE#         25
+  C:002CH         LINE#         26
+  C:002CH         LINE#         27
+  C:002CH         LINE#         28
+  C:002EH         LINE#         29
+  C:002EH         LINE#         30
+  C:0030H         LINE#         31
+  C:0032H         LINE#         32
+  C:0034H         LINE#         33
+  C:0036H         LINE#         34
+  C:0036H         LINE#         35
+  C:0038H         LINE#         36
+  C:0038H         LINE#         37
+  C:0038H         LINE#         38
+  C:003AH         LINE#         39
+  C:003AH         LINE#         40
+  C:003CH         LINE#         41
+  C:003EH         LINE#         42
+  C:0040H         LINE#         43
+  C:0042H         LINE#         44
+  C:0042H         LINE#         45
+  C:0044H         LINE#         46
+  C:0044H         LINE#         47
+  C:0044H         LINE#         48
+  C:0046H         LINE#         49
+  C:0046H         LINE#         50
+  C:0048H         LINE#         51
+  C:004AH         LINE#         52
+  C:004CH         LINE#         53
+  C:004EH         LINE#         54
+  C:004EH         LINE#         55
+  C:0050H         LINE#         56
+  C:0050H         LINE#         57
+  C:0050H         LINE#         58
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/06/2021  14:53:41  PAGE 3
+
+
+  C:0052H         LINE#         59
+  C:0052H         LINE#         60
+  C:0054H         LINE#         61
+  C:0056H         LINE#         62
+  C:0058H         LINE#         63
+  C:0058H         LINE#         64
+  C:0058H         LINE#         65
+  C:005FH         LINE#         66
+  C:0066H         LINE#         67
+  C:0069H         LINE#         68
+  C:006FH         LINE#         69
+  -------         ENDPROC       DIGDISPLAY
+  -------         PROC          MAIN
+  C:0098H         LINE#         71
+  C:0098H         LINE#         72
+  C:0098H         LINE#         73
+  C:009BH         LINE#         74
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+Program Size: data=9.0 xdata=0 code=157
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

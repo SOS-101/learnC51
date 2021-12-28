@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\taochangwan\Documents\Code\C51\10_定时器中断实验\template.uvproj
+Project File Date:  10/04/2021
+
+<h2>Output:</h2>
+Build target 'project'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?MAIN
+Program Size: data=11.0 xdata=0 code=89
+creating hex file from "template"...
+"template" - 0 Error(s), 1 Warning(s).

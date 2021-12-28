@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\taochangwan\Documents\Code\C51\16_DAC模块实验\template.uvproj
+Project File Date:  10/06/2021
+
+<h2>Output:</h2>
+Build target 'project'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TIMER1
+    MODULE:  main.obj (MAIN)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_READ_AD_DATA?XPT2046
+Program Size: data=15.1 xdata=0 code=245
+目标未创建
+Build target 'project'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_READ_AD_DATA?XPT2046
+Program Size: data=15.1 xdata=0 code=245
+creating hex file from "template"...
+"template" - 0 Error(s), 1 Warning(s).

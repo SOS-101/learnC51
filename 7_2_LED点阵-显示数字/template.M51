@@ -1,0 +1,118 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/06/2021  15:17:58  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE main.obj TO template
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  template (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0010H     UNIT         ?DT?MAIN
+            IDATA   0018H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0026H     UNIT         ?PR?_HC595SENDBYTE?MAIN
+            CODE    00B5H     001FH     UNIT         ?PR?MAIN?MAIN
+            CODE    00D4H     0015H     UNIT         ?C_INITSEG
+            CODE    00E9H     000BH     UNIT         ?PR?_DELAY?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   template (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN
+  +--> ?PR?_HC595SENDBYTE?MAIN
+  +--> ?PR?_DELAY?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  template (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/06/2021  15:17:58  PAGE 2
+
+
+  D:00B0H         PUBLIC        P3
+  C:00E9H         PUBLIC        _delay
+  C:00B5H         PUBLIC        main
+  B:00B0H.5       PUBLIC        RCLK
+  B:00B0H.6       PUBLIC        SCLK
+  C:008FH         PUBLIC        _HC595SendByte
+  D:0008H         PUBLIC        ledduan
+  B:00B0H.4       PUBLIC        SER
+  D:0010H         PUBLIC        ledwei
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        i
+  C:00E9H         LINE#         16
+  C:00E9H         LINE#         17
+  C:00F3H         LINE#         18
+  C:00F3H         LINE#         19
+  -------         ENDPROC       _DELAY
+  -------         PROC          _HC595SENDBYTE
+  D:0007H         SYMBOL        dat
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:008FH         LINE#         21
+  C:008FH         LINE#         23
+  C:0091H         LINE#         24
+  C:0093H         LINE#         25
+  C:0095H         LINE#         26
+  C:00A0H         LINE#         27
+  C:00A4H         LINE#         28
+  C:00A6H         LINE#         29
+  C:00A7H         LINE#         30
+  C:00A8H         LINE#         31
+  C:00AAH         LINE#         32
+  C:00AEH         LINE#         33
+  C:00B0H         LINE#         34
+  C:00B1H         LINE#         35
+  C:00B2H         LINE#         36
+  C:00B4H         LINE#         37
+  -------         ENDPROC       _HC595SENDBYTE
+  -------         PROC          MAIN
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:00B5H         LINE#         39
+  C:00B5H         LINE#         41
+  C:00B5H         LINE#         42
+  C:00B7H         LINE#         43
+  C:00C0H         LINE#         44
+  C:00C7H         LINE#         45
+  C:00CEH         LINE#         46
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+Program Size: data=25.0 xdata=0 code=244
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

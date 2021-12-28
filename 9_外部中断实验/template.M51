@@ -1,0 +1,108 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/06/2021  15:18:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE main.obj TO template
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  template (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+            CODE    0006H     0024H     UNIT         ?PR?INT0?MAIN
+            CODE    002AH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0036H     000BH     UNIT         ?PR?_DELAY?MAIN
+            CODE    0041H     0007H     UNIT         ?PR?INT0INIT?MAIN
+            CODE    0048H     0005H     UNIT         ?PR?MAIN?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   template (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?PR?INT0?MAIN
+  +--> ?PR?_DELAY?MAIN
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?INT0INIT?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  template (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/06/2021  15:18:46  PAGE 2
+
+
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  C:0036H         PUBLIC        _delay
+  B:00B0H.2       PUBLIC        k3
+  C:0048H         PUBLIC        main
+  B:00A0H.0       PUBLIC        led
+  B:00A8H.0       PUBLIC        EX0
+  B:0088H.0       PUBLIC        IT0
+  C:0006H         PUBLIC        Int0
+  C:0041H         PUBLIC        Int0Init
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        i
+  C:0036H         LINE#         10
+  C:0036H         LINE#         11
+  C:0040H         LINE#         12
+  C:0040H         LINE#         13
+  -------         ENDPROC       _DELAY
+  -------         PROC          INT0INIT
+  C:0041H         LINE#         15
+  C:0041H         LINE#         16
+  C:0043H         LINE#         17
+  C:0045H         LINE#         18
+  C:0047H         LINE#         19
+  -------         ENDPROC       INT0INIT
+  -------         PROC          MAIN
+  C:0048H         LINE#         21
+  C:0048H         LINE#         22
+  C:004BH         LINE#         23
+  C:004BH         LINE#         25
+  -------         ENDPROC       MAIN
+  -------         PROC          INT0
+  C:0006H         LINE#         28
+  C:0013H         LINE#         29
+  C:001AH         LINE#         30
+  C:001DH         LINE#         31
+  C:001FH         LINE#         32
+  C:001FH         LINE#         33
+  -------         ENDPROC       INT0
+  -------         ENDMOD        MAIN
+
+Program Size: data=9.0 xdata=0 code=77
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

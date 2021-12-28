@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\taochangwan\Documents\Code\C51\51小车1\template.uvproj
+Project File Date:  10/19/2021
+
+<h2>Output:</h2>
+Build target '目标 1'
+assembling STARTUP.A51...
+compiling main.c...
+main.c(1): warning C318: can't open file 'stc15.h'
+start_set.h(1): warning C318: can't open file 'stc15.h'
+start_set.h(2): error C202: 'P0': undefined identifier
+start_set.h(3): error C202: 'P0': undefined identifier
+start_set.h(4): error C202: 'P0': undefined identifier
+start_set.h(5): error C202: 'P1': undefined identifier
+start_set.h(6): error C202: 'P1': undefined identifier
+start_set.h(7): error C202: 'P1': undefined identifier
+start_set.h(8): error C202: 'P2': undefined identifier
+start_set.h(9): error C202: 'P2': undefined identifier
+start_set.h(10): error C202: 'P2': undefined identifier
+start_set.h(11): error C202: 'P2': undefined identifier
+start_set.h(16): error C202: 'TMOD': undefined identifier
+start_set.h(17): error C202: 'TH0': undefined identifier
+start_set.h(18): error C202: 'TL0': undefined identifier
+start_set.h(19): error C202: 'EA': undefined identifier
+start_set.h(20): error C202: 'ET0': undefined identifier
+start_set.h(21): error C202: 'TR0': undefined identifier
+start_set.h(22): error C202: 'TH1': undefined identifier
+start_set.h(23): error C202: 'TL1': undefined identifier
+start_set.h(24): error C202: 'EA': undefined identifier
+start_set.h(25): error C202: 'ET1': undefined identifier
+start_set.h(26): error C202: 'TR1': undefined identifier
+motor.h(1): warning C318: can't open file 'stc15.h'
+motor.h(4): error C202: 'IN1': undefined identifier
+motor.h(5): error C202: 'IN2': undefined identifier
+motor.h(7): error C202: 'ENA': undefined identifier
+motor.h(9): error C202: 'ENA': undefined identifier
+motor.h(13): error C202: 'IN3': undefined identifier
+motor.h(14): error C202: 'IN4': undefined identifier
+motor.h(16): error C202: 'ENB': undefined identifier
+motor.h(18): error C202: 'ENB': undefined identifier
+motor.h(22): error C202: 'IN1': undefined identifier
+motor.h(23): error C202: 'IN2': undefined identifier
+motor.h(25): error C202: 'ENA': undefined identifier
+motor.h(27): error C202: 'ENA': undefined identifier
+motor.h(31): error C202: 'IN3': undefined identifier
+motor.h(32): error C202: 'IN4': undefined identifier
+motor.h(34): error C202: 'ENB': undefined identifier
+motor.h(36): error C202: 'ENB': undefined identifier
+time.h(1): warning C318: can't open file 'stc15.h'
+time.h(5): error C202: 'TH0': undefined identifier
+time.h(6): error C202: 'TL0': undefined identifier
+time.h(13): error C202: 'TH1': undefined identifier
+time.h(14): error C202: 'TL1': undefined identifier
+main.c(10): error C202: 'left2': undefined identifier
+main.c(12): error C202: 'left2': undefined identifier
+main.c(14): error C202: 'left2': undefined identifier
+main.c(16): error C202: 'left2': undefined identifier
+main.c(18): error C202: 'left2': undefined identifier
+main.c(20): error C202: 'left2': undefined identifier
+main.c(24): error C202: 'left2': undefined identifier
+目标未创建
+Build target '目标 1'
+compiling main.c...
+main.c(2): warning C318: can't open file 'stc15.h'
+linking...
+Program Size: data=21.0 xdata=0 code=646
+creating hex file from "template"...
+"template" - 0 Error(s), 1 Warning(s).
+Build target '目标 1'
+compiling main.c...
+linking...
+Program Size: data=21.0 xdata=0 code=646
+creating hex file from "template"...
+"template" - 0 Error(s), 0 Warning(s).
+Build target '目标 1'
+linking...
+Program Size: data=21.0 xdata=0 code=646
+creating hex file from "template"...
+"template" - 0 Error(s), 0 Warning(s).
